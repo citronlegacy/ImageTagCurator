@@ -38,7 +38,7 @@ def create_tag_chart(directory_path, top_tags):
   bars = plt.bar(tags_to_show, counts_to_show, color='blue')
   plt.xlabel(f'Top {num_tags_to_show} Tag Occurrences (excluding specified tags)')
   plt.ylabel('Number of Occurrences')
-  plt.title(f'{project_name}')
+  plt.title(f'{project_name}: {total_image_count} images')
   plt.xticks(rotation=45, ha='right')  # Rotate x-axis labels for better visibility
 
   # Display percentages at the top of each bar
